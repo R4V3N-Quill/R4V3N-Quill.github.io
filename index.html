@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <title>Nightcord at 25:00</title>
+
+</head>
+<body>
+    
+<!-- navi -->
+    <nav class="nav-wrapper purple darken-2">
+        <div class="container">
+            <a href="#" class="brand-logo"><div class="container" id="logo"><img src="nightcord/img/25ji_en_logo.jpg" alt="logos" class="responsive-img" width="200" height="auto"></div></a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">                    
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#photo's">Photo's</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="this is instagram">
+                    <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="this is facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-tooltip="this is twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            </ul>
+        </div>
+        <ul class="sidenav indigo lighten-2" id="mobile-menu">
+            <li><a href="#photo's">Photo's</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
