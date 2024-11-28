@@ -31,6 +31,7 @@
              margin-left: 50px;
            
         }
+
         .tabs .indicator{
             background-color: #1a237e;
         }
@@ -75,6 +76,7 @@
         .slider .slides { 
             background: none;
             border: none;
+            padding: 0%;
             } 
         section p::selection{
             color: #8889cc;
@@ -101,18 +103,23 @@
                 width: 100%; 
                 height: 76%;
                 display: block; 
+                margin-top: 55px;
         }
         }
         @media screen and (max-width: 375px){
             .brand-logo{
                 margin-left: 16px;
             }
+
             .slider .slides li img { 
                 width: 100%; 
                 height: 69%;
                 display: block; 
+                object-fit: cover;
+                margin-top: 65px;
+
         }
-        }
+    }
         @media screen and (max-width: 320px){
             .brand-logo{
                 margin-left: 15px;
@@ -121,6 +128,7 @@
                 width: 100%; 
                 height: 61%;
                 display: block; 
+                margin-top: 55px;
         }
         #members li{
             padding: 0%;
@@ -200,21 +208,21 @@
 
 <section>
     <div class="container section ">
-        <div class="row">
+        <div class="column">
             <div class="center">
                 <h2 class="purple-text darken-3">Empty Sekai</h2>
                 <h6 class="purple-text text-darken-3">Inhabitants</h6>
                 <ul class="tabs">
                     <li class="tab col s6">
-                        <a href="#members" class="indigo-text text-darken-4">Unit Members</a>
+                        <a href="#members" class="purple-text text-darken-4">Unit Members</a>
                     </li>
                     <li class="tab col s6">
-                    <a href="#virtual-singers" class="indigo-text text-darken-4">Virtual Singers</a>
+                    <a href="#virtual-singers" class="purple-text text-darken-4">Virtual Singers</a>
                 </li>
                 </ul>
 
-                <div class="col s12" id="members">
-                    <p class="flow-text indigo-text text-darken-4">Unit Members</p>
+                <div class="row s12" id="members">
+                    <p class="flow-text purple-text text-darken-4">Unit Members</p>
                     <div class="container">
                         <div class="row">
                             <div class="slider">
