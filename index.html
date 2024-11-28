@@ -13,6 +13,12 @@
             font-family:'Georgia';
             font-size: large;
         }
+        .video-container{
+            padding-bottom: 48%;
+        }
+        video{
+            border-radius: 35px;
+        }
         .emage{
             position: relative;
         }
@@ -24,6 +30,58 @@
             font-family:'Papyrus';
              margin-left: 50px;
            
+        }
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        li>img{
+            border-radius: 35px;
+        }
+        .prev-btn, .next-btn { 
+            position: absolute; 
+            top: 50%; transform: translateY(-50%); 
+            background: rgba(0, 0, 0, 0.5); 
+            border: none; 
+            color: white; 
+            font-size: 24px; 
+            padding: 10px; 
+            z-index: 1000; 
+        } 
+        .prev-btn { 
+            left: 10px; 
+            } 
+        .next-btn { 
+            right: 10px; 
+            }
+        .prev-btn:hover, .next-btn:hover { 
+            opacity: 1; 
+        }
+        .prev-btn:focus, .next-btn:focus { outline: none;
+            background: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            } 
+        .prev-btn:active, .next-btn:active { 
+            background: rgba(0, 0, 0, 0.5);  
+            color: white; } 
+        .prev-btn { 
+            left: 10px; 
+            } 
+        .next-btn { 
+            right: 10px; 
+            } 
+        .slider .slides { 
+            background: none;
+            border: none;
+            } 
+        section p::selection{
+            color: #8889cc;
+            background: none;
+        }
+        section h2::selection{
+            user-select: none;
         }
         @media screen and (max-width: 670px) {
             header{
@@ -39,16 +97,34 @@
             .brand-logo{
                 margin-left: 20px;
             }
+            .slider .slides li img { 
+                width: 100%; 
+                height: 76%;
+                display: block; 
+        }
         }
         @media screen and (max-width: 375px){
             .brand-logo{
                 margin-left: 16px;
             }
+            .slider .slides li img { 
+                width: 100%; 
+                height: 69%;
+                display: block; 
+        }
         }
         @media screen and (max-width: 320px){
             .brand-logo{
                 margin-left: 15px;
             }
+            .slider .slides li img { 
+                width: 100%; 
+                height: 61%;
+                display: block; 
+        }
+        #members li{
+            padding: 0%;
+        }
         }
 
     </style>
@@ -69,9 +145,9 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#members" class="white-text">Members</a></li>
+                <li><a href="#story" class="white-text">Story</a></li>
+                <li><a href="#characters" class="white-text">Characters</a></li>
                 <li><a href="#songs" class="white-text">Songs</a></li>
-                <li><a href="#cards" class="white-text">Cards</a></li>
                 <li><a href="#about" class="white-text">About</a></li>
                 <li><a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Listen in Spotify">
                     <i class="fab fa-spotify"></i>
@@ -81,66 +157,111 @@
 
     </nav>
     <section class="emage">
-        <img src="nightcord/img/ewan.jpg" alt="sa">
+        <img src="nightcord/img/emptysekai.png" alt="sa">
      </section>
     <ul class="sidenav transparent purple lighten-1" id="mobile-menu">
         <li><div class="user-view">
             <div class="background">
-              <img src="nightcord/img/ewan.jpg">
+              <img src="nightcord/img/characters/ewan.jpg">
             </div>
             <a href="#user"><img class="circle" src="nightcord/img/sirkel.jpg"></a>
-            <a href="#name"><span class="white-text name">nightcord</span></a>
+            <a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7""><span class="white-text name z-depth-5">Nightcord at 25:00</span></a>
 
           </div></li>
-    
-        <li><a href="#photo's" class="white-text">Characters</a></li>
-        <li><a href="#service" class="white-text">Songs</a></li>
-        <li><a href="#contact" class="white-text">Cards</a></li>
-        <li><a href="#" class="white-text">About</a></li>
+        <li><a href="#story" class="white-text">Story</a></li>
+        <li><a href="#characters" class="white-text">Characters</a></li>
+        <li><a href="#song" class="white-text">Songs</a></li>
+        <li><a href="#about" class="white-text">About</a></li>
 
     </ul>
 
 
-<section class="container section scrollspy" id="photo's">
-    <div class="row">
-        <div class="col s12 l4">
-            <img src="img/portrait.jpg" alt="portrait" class="responsive-img materialboxed">
+<section class="container section scrollspy" id="story">
+        <div class="center">
+            <h2 class="purple-text text-darken-4">Story</h2>
+            <div class="video-container"><video src="nightcord/media/25-ji,_Nightcord_de._Opening.mp4.mp4" controls class="responsive-video" ></video></div>
+            <p>The group consists of four members: Kanade Yoisaki, Mizuki Akiyama, Ena Shinonome, and Mafuyu Asahina. Each member joins the group with their own unique backgrounds and personal struggles, using music as an outlet to express their feelings and connect with others.</p>
+            <p>Kanade Yoisaki is the driving force behind the group. A talented composer dealing with social anxiety, she seeks solace in creating music. Mizuki Akiyama joins the group while grappling with their identity and finding a sense of belonging. Ena Shinonome, a skilled artist under pressure to meet her family's expectations, finds a creative outlet through the group's collaborative efforts. Finally, Mafuyu Asahina, who appears perfect on the surface but battles deep emotional turmoil, uses the group's music as a way to confront and cope with her inner struggles.</p>
+            <p>Together, these four individuals form a bond through their shared passion for music, meeting virtually in a chatroom they named "Nightcord at 25:00." The group operates in the late hours of the night, where they find peace and inspiration away from the pressures of daily life. Their music reflects their personal experiences and emotions, resonating deeply with their listeners and providing a therapeutic escape for themselves and their audience.</p>
+            <p>The story of "Nightcord at 25:00" explores themes of friendship, creativity, and the healing power of music. Each member's journey is intertwined with the others, showcasing how their collaborative efforts and support help them navigate their personal challenges. Their story is a testament to the impact of shared artistic expression and the connections formed through mutual understanding and empathy.</p>
         </div>
-        <div class="col s12 l6 offset-l1">
-            <h2 class="indigo-text text-darken-2">Story</h2>
-            <p>The group was formed by Kanade Yoisaki, a gifted but troubled composer who uses music as an escape from her harsh reality. She created an online chatroom called "Nightcord at 25:00" to find like-minded individuals who also found solace in music. There, she met Mizuki Akiyama, Ena Shinonome, and Mafuyu Asahina, each with their own reasons for joining and contributing to the group's music.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 l4">
-            <img src="img/city.jpg" alt="city" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1">
-            <h2 class="indigo-text text-darken-2">Cityscapes</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptatum delectus iusto veritatis, dolore animi molestiae debitis at quidem eius iure?</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 l4">
-            <img src="img/nature.jpg" alt="nature" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1">
-            <h2 class="indigo-text text-darken-2">Nature</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptatum delectus iusto veritatis, dolore animi molestiae debitis at quidem eius iure?</p>
-        </div>
-    </div>
+
+
 </section>
 </header>
 <div class="parallax-container">
     <div class="parallax-container">
         <div class="parallax">
-            <img src="img/stars.jpg" alt="star" class="responsive-img">
+            <img src="nightcord/img/bg/metal.jpg" alt="metal" class="responsive-img">
 
         </div>
 </div>
 </div>
 
+<section>
+    <div class="container section ">
+        <div class="row">
+            <div class="center">
+                <h2 class="purple-text darken-3">Empty Sekai</h2>
+                <h6 class="purple-text text-darken-3">Inhabitants</h6>
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#members" class="indigo-text text-darken-4">Unit Members</a>
+                    </li>
+                    <li class="tab col s6">
+                    <a href="#virtual-singers" class="indigo-text text-darken-4">Virtual Singers</a>
+                </li>
+                </ul>
 
+                <div class="col s12" id="members">
+                    <p class="flow-text indigo-text text-darken-4">Unit Members</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="slider">
+                                <ul class="slides">
+                                  <li>
+                                    <img src="nightcord/img/rooms/kanada room.jpg"> 
+                                    <div class="caption right-align">
+                                            <img src="nightcord/img/for sliders/kanadaslide.png" alt="">
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="nightcord/img/rooms/fuyuroom.jpg"> 
+                                    <div class="caption left-align">
+                                        <img src="nightcord/img/for sliders/fuyuslide.png" alt="">
+                                    </div>
+                                  </li>
+                                  <li >
+                                    <img src="nightcord/img/rooms/enroom.jpg"> 
+                                    <div class="caption right-align">
+                                        <img src="nightcord/img/for sliders/enaslide.PNG" alt="" class="responsive-img">
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <img src="nightcord/img/rooms/zookiroom.jpg">
+                                    <div class="caption left-align">
+                                      <img src="nightcord/img/for sliders/zukislide.png" alt="">
+                                    </div>
+
+                                  </li>
+                                </ul>
+                                <button class="prev-btn"><i class="material-icons">chevron_left</i></button> 
+                                <button class="next-btn"><i class="material-icons">chevron_right</i></button>
+                              </div>
+                                  
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col s12" id="virtual-singers">
+                    <p class="flow-text indigo-text text-darken-4" >Virtual Singers</p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -183,6 +304,11 @@
             $('.tabs').tabs();
             $('.tooltipped').tooltip();
             $('.scrollspy').scrollSpy();
+            $('.slider').slider();
+            $('.prev-btn').on('click', function() { 
+            $('.slider').slider('prev'); }); 
+            $('.next-btn').on('click', function() { 
+            $('.slider').slider('next'); });
         });
     </script>
 </body>
