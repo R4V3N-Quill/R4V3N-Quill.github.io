@@ -82,8 +82,8 @@
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#join" class="white-text">Join Us</a></li>
-                <li><a href="index.html" class="white-text">Story</a></li>
-                <li><a class='dropdown-trigger btn transparent' href='#' data-target='dropdown1'>Characters</a></li>
+                <li><a href="index.html" class="white-text">Home</a></li>
+                <li><a class='dropdown-trigger  transparent' href='#' data-target='dropdown1'>Characters</a></li>
                 <li><a href="#songs" class="white-text">Songs</a></li>
                 <li><a href="about.html" class="white-text">About</a></li>
                 <li><a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Listen in Spotify">
@@ -94,9 +94,10 @@
     </nav>
 
     <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!" class="purple-text darken-3">Members</a></li>
-        <li><a href="#!" class="purple-text darken-3">Virtual Singers</a></li>
-
+        <li><a href="members.html" class="purple-text darken-3">Members</a></li>
+        <li><a href="vs.html" class="purple-text darken-3">Virtual Singers</a></li>
+    </ul>
+    
         <ul class="sidenav transparent purple lighten-1" id="mobile-menu">
             <li><div class="user-view">
                 <div class="background">
@@ -107,7 +108,7 @@
     
               </div></li>
             <li><a href="#join" class="white-text pulsate">Join Us</a></li>
-            <li><a href="index.html" class="white-text">Story</a></li>
+            <li><a href="index.html" class="white-text">Home</a></li>
             <li> <h6 class="white-text">&nbsp;&nbsp;&nbsp;Characters</h6>
                 <a href="members.html" class="white-text">Members</a>
                 <a href="vs.html" class="white-text">virtual-singers</a>
@@ -122,13 +123,12 @@
         <h2 class="indigo-text darken-4">About</h2>
 
         <p class="deep-purple-text darken-4">
+            Nightcord at 25:00 or "25-ji Nightcord de." is one of the six units of the popular game "Project SEKAI COLORFUL STAGE! feat. Hatsune Miku". Their music is often characterized by its melancholic and introspective tone, reflecting the themes of loneliness, isolation, and self-discovery that are explored in their songs.
+
+        <br><br>
             Project SEKAI COLORFUL STAGE! feat. Hatsune Miku (also known as "Project SEKAI"or "Proseka") is developed by the  collaboration between these companies: SEGA, Craft Egg, Colorful Palette, and Crypton Future Media. The JP (Japanese) server which is also the first server of the game was released on the 30th of September in 2020 for both Android and iOS devices.
     
         <br>
-
-            As of 2024, aside from the JP Server There are currently 3 other playable servers of Project SEKAI: <br><br>The TW (Taiwanese Server) released on September 30, 2021 under the name "世界計畫 繽紛舞台！ feat. 初音未來".<br><br> The EN (English Server) released on December 7, 2021, under the name "HATSUNE MIKU: COLORFUL STAGE!". <br><br> The KR (Korean Server) released on May 20, 2022, under the name "프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠".
-
-        </p>
       <hr>
 
       <section class="container section" >
@@ -262,6 +262,7 @@
             $('.slider').slider('next'); });
             $('.dropdown-trigger').dropdown({ 
                 hover: true,
+                coverTrigger: false
             });
         });
 </script>
