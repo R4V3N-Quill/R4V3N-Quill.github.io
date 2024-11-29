@@ -2,7 +2,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/materialize.min.css">
@@ -78,12 +77,21 @@
             border: none;
             padding: 0%;
             } 
+
+        .card .card-content{
+            padding: 5px;
+            border-radius: 35px;
+            color:#8889cc;
+        }
         section p::selection{
             color: #8889cc;
             background: none;
         }
         section h2::selection{
             user-select: none;
+        }
+        .slider .indicators .indicator-item{
+            display: none;
         }
         @media screen and (max-width: 670px) {
             header{
@@ -162,8 +170,10 @@
                 </a></li>
             </ul>
         </div>
-
     </nav>
+
+
+<!-- top-image -->
     <section class="emage">
         <img src="nightcord/img/emptysekai.png" alt="sa">
      </section>
@@ -183,7 +193,7 @@
 
     </ul>
 
-
+<!-- Story -->
 <section class="container section scrollspy" id="story">
         <div class="center">
             <h2 class="purple-text text-darken-4">Story</h2>
@@ -197,6 +207,9 @@
 
 </section>
 </header>
+
+
+<!-- parallax -->
 <div class="parallax-container">
     <div class="parallax-container">
         <div class="parallax">
@@ -206,6 +219,7 @@
 </div>
 </div>
 
+<!-- characters -->
 <section>
     <div class="container section ">
         <div class="column">
@@ -264,6 +278,74 @@
                 </div>
                 <div class="col s12" id="virtual-singers">
                     <p class="flow-text indigo-text text-darken-4" >Virtual Singers</p>
+
+                <div class="container">
+                        <div class="row">
+                
+                    <div class="col s12 l4">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="nightcord/img/virtualS/Miku.jpg" alt="" class="materialboxed">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Hatsune Miku</span>
+                            </div>
+                    </div>
+                        </div>
+                    <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="nightcord/img/virtualS/Meiko.jpg" alt="" class="materialboxed">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title">Meiko</span>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="nightcord/img/virtualS/luka.jpg" alt="" class="materialboxed">
+                        </div>
+                        <div class="card-content">
+                        <span class="card-title">Megurine Luka</span>
+                                </div>
+                            </div>
+                            </div>
+                    <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="nightcord/img/virtualS/rin.jpg" alt="" class="materialboxed">
+                                </div>
+                        <div class="card-content">
+                        <span class="card-title">Kagamine Rin</span>
+                            </div>
+                                </div>
+                                </div>
+                    <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="nightcord/img/virtualS/len.jpg" alt="" class="materialboxed">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title">Kagamine Len</span>
+                                            </div>
+                                    </div>
+                                        </div>
+                    <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="nightcord/img/virtualS/kaito.jpg" alt="" class="materialboxed">
+                                        </div>
+                                        <div class="card-content">
+                                        <span class="card-title">Kaito</span>
+                                            </div>
+                                        </div>
+                                        </div>
+                        
+                    </div>
+                    </div> 
                 
                 </div>
             </div>
@@ -272,8 +354,7 @@
 </section>
 
 
-
-        <!-- footer -->
+<!-- footer -->
 
 
     <footer class="page-footer purple darken-3">
