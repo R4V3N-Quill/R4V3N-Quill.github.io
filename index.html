@@ -163,7 +163,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="about.html#join" class="white-text">Join Us</a></li>
                 <li><a href="#story" class="white-text">Story</a></li>
-                <li><a href="#characters" class="white-text">Characters</a></li>
+                <li><a class='dropdown-trigger btn transparent' href='#' data-target='dropdown1'>Characters</a></li>
                 <li><a href="#songs" class="white-text">Songs</a></li>
                 <li><a href="about.html" class="white-text">About</a></li>
                 <li><a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7" class="tooltipped btn-floating btn-small green accent-4" data-tooltip="Listen in Spotify">
@@ -173,12 +173,15 @@
         </div>
     </nav>
 
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="members.html" class="purple-text darken-3">Members</a></li>
+        <li><a href="vs.html" class="purple-text darken-3">Virtual Singers</a></li>
+    </ul>
 
-<!-- top-image -->
     <section class="emage">
         <img src="nightcord/img/emptysekai.png" alt="sa">
      </section>
-    <ul class="sidenav transparent purple lighten-1" id="mobile-menu">
+     <ul class="sidenav transparent purple lighten-1" id="mobile-menu">
         <li><div class="user-view">
             <div class="background">
               <img src="nightcord/img/characters/ewan.jpg">
@@ -187,9 +190,12 @@
             <a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7""><span class="white-text name z-depth-5">Nightcord at 25:00</span></a>
 
           </div></li>
-        <li><a href="about.html#join" class="white-text">Join Us</a></li>
-        <li><a href="#story" class="white-text">Story</a></li>
-        <li><a href="#characters" class="white-text">Characters</a></li>
+        <li><a href="#join" class="white-text pulsate">Join Us</a></li>
+        <li><a href="index.html" class="white-text">Story</a></li>
+        <li> <h6 class="white-text">&nbsp;&nbsp;&nbsp;Characters</h6>
+            <a href="members.html" class="white-text">Members</a>
+            <a href="vs.html" class="white-text">virtual-singers</a>
+        </li>
         <li><a href="#song" class="white-text">Songs</a></li>
         <li><a href="about.html" class="white-text">About</a></li>
 
@@ -417,6 +423,9 @@
             $('.slider').slider('prev'); }); 
             $('.next-btn').on('click', function() { 
             $('.slider').slider('next'); });
+            $('.dropdown-trigger').dropdown({ 
+                hover: true,
+            });
         });
     </script>
 </body>
