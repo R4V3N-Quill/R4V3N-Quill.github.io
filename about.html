@@ -81,6 +81,7 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
+                <li><a href="#join" class="white-text">Join Us</a></li>
                 <li><a href="index.html" class="white-text">Story</a></li>
                 <li><a href="#characters" class="white-text">Characters</a></li>
                 <li><a href="#songs" class="white-text">Songs</a></li>
@@ -103,6 +104,7 @@
             <a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7""><span class="white-text name z-depth-5">Nightcord at 25:00</span></a>
 
           </div></li>
+        <li><a href="#join" class="white-text pulsate">Join Us</a></li>
         <li><a href="index.html" class="white-text">Story</a></li>
         <li><a href="#characters" class="white-text">Characters</a></li>
         <li><a href="#song" class="white-text">Songs</a></li>
@@ -241,11 +243,19 @@
 <script src="js/jquery.js"></script>
 <script src="js/materialize.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-        $('.parallax').parallax();
-        $('.datepicker').datepicker();
-    });
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+            $('.slider').slider();
+            $('.prev-btn').on('click', function() { 
+            $('.slider').slider('prev'); }); 
+            $('.next-btn').on('click', function() { 
+            $('.slider').slider('next'); });
+        });
 </script>
 </body>
 </html>
