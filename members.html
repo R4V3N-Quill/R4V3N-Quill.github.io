@@ -8,13 +8,6 @@
     <title>Characters</title>
 
     <style>
-
-    header{
-        background-image: url('/nightcord/img/Background_Empty_SEKAI .jpg');
-        background-size: cover;
-        background-position: center;
-        min-height: 1000px;
-    }
     body{
         font-family:'Georgia';
         font-size: large;
@@ -34,6 +27,12 @@
             user-select: none;
             white-space: nowrap;
         }
+    #cards{
+        padding-top: 40px;
+    }
+    div .card{
+        padding-top: 50px;
+    }
     @media screen and (max-width: 670px) {
             header{
                 min-height: 500px;
@@ -71,10 +70,10 @@
 <header>
 <!-- navi -->
 
-    <nav class="nav-wrapper purple darken-1">
+    <nav class="nav-wrapper deep-purple lighten-1">
         <div class="container">
             <a href="index.html" class="brand-logo">
-               NaitoCord
+               NightCord
             </a>
             <a href="#" class="sidenav-trigger show-on-large" data-target="mobile-menu">                    
                 <i class="material-icons">menu</i>
@@ -94,87 +93,110 @@
 
     <!-- Dropdown Structure -->
      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!" class="purple-text darken-3">Members</a></li>
-        <li><a href="#!" class="purple-text darken-3">Virtual Singers</a></li>
+        <li><a href="members.html" class="black-text">Members</a></li>
+        <li><a href="vs.html" class="black-text">Virtual Singers</a></li>
         </ul>
 
-    <ul class="sidenav transparent purple lighten-1" id="mobile-menu">
-        <li><div class="user-view">
-            <div class="background">
-              <img src="nightcord/img/characters/ewan.jpg">
-            </div>
-            <a href="#user"><img class="circle" src="nightcord/img/sirkel.jpg"></a>
-            <a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7""><span class="white-text name z-depth-5">Nightcord at 25:00</span></a>
-
-          </div></li>
-        <li><a href="about.html#join" class="white-text pulsate">Join Us</a></li>
-        <li><a href="index.html" class="white-text">Home</a></li>
-        <li> <h6 class="white-text">&nbsp;&nbsp;&nbsp;Characters</h6>
-            <a href="members.html" class="white-text">Members</a>
-            <a href="vs.html" class="white-text">virtual-singers</a>
-        </li>
-        <li><a href="#song" class="white-text">Songs</a></li>
-        <li><a href="about.html" class="white-text">About</a></li>
-
-    </ul>
-</header>
-
-</div>
-<div class="parallax-container">
-    <div class="parallax-container">
-        <div class="parallax">
-            <img src="nightcord/img/bg/flower.jpg" alt="flower" class="responsive-img">
-
-        </div>
-</div>
-</div>
-</main>
-
-
-<section class="container section scrollspy" id="join">
-    <div class="row">
-        <div class="col s12 l5 offset-l1">
-            <h3 class="deep-purple-text">Le Miku has spoken</h3>
-            <img src="nightcord/img/mikumiku please.png" alt="" class="responsive-img" id="plead">
-
-        </div>
-        
-        <div class="col s12 l5 push-l1">
-            <h5 class="indigo-text">Be a Member</h5>
-            <div class="input-field">
-                <i class="material-icons prefix deep-purple-text">account_circle</i>
-                <input type="text" id="text">
-                <label for="message">Username</label>
-            </div>
-            <div class="input-field">
-                <i class="material-icons prefix deep-purple-text">email</i>
-                <input type="email" id="email">
-                <label for="email">Your Email</label>
+        <ul class="sidenav transparent deep-purple lighten-4" id="mobile-menu">
+            <li><div class="user-view">
+                <div class="background">
+                  <img src="nightcord/img/characters/ewan.jpg">
                 </div>
-                <div class="input-field">
-                    <i class="material-icons prefix deep-purple-text">password</i>
-                    <input type="password" id="password">
-                    <label for="email">Enter Password</label>
-                    </div>
-            <div class="input-field">
-                <i class="material-icons prefix deep-purple-text">date_range</i>
-                <input type="text" id="date" class="datepicker">
-                <label for="date">Birthdate</label>
+                <a href="#user"><img class="circle" src="nightcord/img/sirkel.jpg"></a>
+                <a href="https://open.spotify.com/artist/1VMXuPyhNldYomz8ojLKP7""><span class="white-text name z-depth-5">Nightcord at 25:00</span></a>
+    
+              </div></li>
+              <li><a href="about.html#join">Join Us</a></li>
+              <li><a href="index.html" >Home</a></li>
+              <li> <h6 >&nbsp;&nbsp;&nbsp;Characters</h6>
+                  <a href="members.html" >Members</a>
+                  <a href="vs.html" >virtual-singers</a>
+              </li>
+              <li><a href="#song" >Songs</a></li>
+              <li><a href="about.html">About</a></li>
+      
+        </ul>
+
+<section class="emage">
+    <video src="nightcord/media/Nightcord at 25_00 Trailer.mp4" autoplay muted loop class="responsive-video"></video>
+ </section>
+
+</div>
+ <section class="container section">
+    <div class="row">
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="nightcord/img/characters/cards/K.jpg" alt="k" class="responsive-img materialboxed" id="cards">
             </div>
-        <div class="input-field">
-            <p>
-                <label>
-                    <input type="checkbox">
-                    <span>Are you Fully Devoted?</span>
-                </label>
-            </p>
-        <div class="input-field center">
-            <button class="btn deep-purple">Submit</button>
+            <div class="col s12 l6 pull-l4 ">
+                <h4 class="deep-purple-text text-darken-2 ">Yoisaki Kanade "K"</h4>
+                <span>Role: Composer</span>
+                <p> She is determined and passionate about creating music that brings hope to people. She initiated the formation of Nightcord and is the driving force behind the group's activities.
+                    <br>
+                Kanade started the group with the goal of making music that "saves people" and gives them hope. She is deeply committed to the group's mission and works tirelessly to achieve it.</p>
+            </div>
         </div>
+        <div class="col s12 l4">
+            <img src="nightcord/img/characters/cards/Yuki.jpg" alt="yuki" class="responsive-img materialboxed" id="cards">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h4 class="deep-purple-text text-darken-2">Asahina Mafuyu "Yuki"</h4>
+            <span>Role: Lyricist</span>
+            <p>She appears perfect on the surface but is deeply involved in the music circle. She is introspective and sensitive to the emotions conveyed through music.
+                <br>
+            Mafuyu was recruited by Kanade after she composed an arrangement of one of Kanade's songs. She uses the alias "Yuki" and is inspired by the snow outside her window when choosing her name.</p>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+            <img src="nightcord/img/characters/cards/enanan.jpg" alt="nana" class="responsive-img materialboxed" id="cards">
+        </div>
+        <div class="col s12 l6 pull-l4 n">
+            <h4 class="deep-purple-text text-darken-2">Shinonome Ena "Enanan"</h4>
+            <span>Role: Illustrator</span>
+            <p>She seeks approval from others and frequently posts selfies online. She is expressive and uses her art to communicate her feelings.
+                <br>
+            Ena is an artist who often uploads selfies to the internet, seeking validation from others. She is one of the original members recruited by Kanade.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 l4">
+            <img src="nightcord/img/characters/cards/mizooki.jpg" alt="zukizuki" class="responsive-img materialboxed" id="cards">
+        </div>
+        <div class="col s12 l6 offset-l1">
+            <h4 class="deep-purple-text text-darken-2">Akiyama Mizuki "Amia"</h4>
+            <span>Role: MV Creator</span>
+            <p>They are focused on "cuteness" and adds a unique touch to the group with her whimsical and playful nature.
+                <br>
+            Mizuki is a free spirit who brings a sense of playfulness and whimsy to the group. She is deeply involved in the creative process and adds her own unique flair to the music.</p>
+    </div>
+    </div>
 </section>
+<div class="parallax-container">
+    <div class="parallax">
+        <img src="nightcord/img/bg/gloom.jpg" alt="metal" class="responsive-img">
+
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="nightcord/img/Niigo.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator purple-text text-darken-4">Nightcord at 25:00<i class="material-icons right">more_vert</i></span>
+          <p><a href="https://projectsekai.fandom.com/wiki/25-ji,_Nightcord_de.">More info</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title purple-text text-darken-4">Nightcord at 25:00<i class="material-icons right">close</i></span>
+          <h5>The members of Nightcord at 25 initially did not know each other's real names or appearances, communicating solely through the chat tool "Nightcord." This adds to the mysterious and intriguing nature of the group. Over time, they form a close bond and work together to create music that resonates with their audience.</h5>
+        </div>
+      </div>
+    </div>
+
+
+
+</header>
 <!-- footer -->
 
 
