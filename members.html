@@ -15,9 +15,11 @@
      .brand-logo{
         font-family:'Papyrus';
         margin-left: 50px;
-           
         }  
-
+        .emage{
+            position: relative;
+            background-color: black;
+        }
         main p::selection{
             color: #8889cc;
             background: none;
@@ -27,6 +29,22 @@
             user-select: none;
             white-space: nowrap;
         }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .video-container video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
     #cards{
         padding-top: 40px;
     }
@@ -117,13 +135,14 @@
       
         </ul>
 
-<section class="emage">
+<section class="emage center-align">
     <video src="nightcord/media/Nightcord at 25_00 Trailer.mp4" autoplay muted loop class="responsive-video"></video>
  </section>
 
 </div>
 <div class="container">
-    <h2 class=" purple-text text-darken-4 center">Nightcord at 25:00</h2>
+    <h3 class=" purple-text text-darken-4 center">Nightcord at 25:00</h3>
+    <hr>
     <p>The members of Nightcord at 25 initially did not know each other's real names or appearances, communicating solely through the chat tool "Nightcord." This adds to the mysterious and intriguing nature of the group. Over time, they form a close bond and work together to create music that resonates with their audience.</p></div>
 
  <section class="container section">
